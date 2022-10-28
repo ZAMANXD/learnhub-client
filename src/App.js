@@ -9,7 +9,7 @@ import Faqs from './pages/Faqs/Faqs';
 import Filter from './pages/Filter/Filter';
 import Home from './pages/Home/Home';
 import Main from './pages/Main/Main';
-import ResetPass from './pages/ResetPass/ResetPass';
+// import ResetPass from './pages/ResetPass/ResetPass';
 import SignIn from './pages/SignIn/SignIn';
 import SignUp from './pages/SignUp/SignUp';
 import User from './pages/User/User';
@@ -24,8 +24,7 @@ function App() {
         {
           path: '/',
           element: <Home></Home>,
-          loader: () =>
-            fetch('https://brain-exercise-server.vercel.app/courses'),
+          loader: () => fetch('http://localhost:5000/courses'),
         },
         {
           path: '/blogs',
@@ -34,8 +33,7 @@ function App() {
         {
           path: '/courses',
           element: <Courses></Courses>,
-          loader: () =>
-            fetch('https://brain-exercise-server.vercel.app/courses'),
+          loader: () => fetch('http://localhost:5000/courses'),
         },
         {
           path: '/faqs',
@@ -57,24 +55,17 @@ function App() {
             </PrivateRoute>
           ),
         },
-        // {
-        //   path: '/reset',
-        //   element: <ResetPass></ResetPass>,
-        // },
+
         {
           path: '/course-details/:id',
           loader: ({ params }) =>
-            fetch(
-              `https://brain-exercise-server.vercel.app/courses/${params.id}`
-            ),
+            fetch(`http://localhost:5000/courses/${params.id}`),
           element: <CourseDetails></CourseDetails>,
         },
         {
           path: '/checkout/:id',
           loader: ({ params }) =>
-            fetch(
-              `https://brain-exercise-server.vercel.app/courses/${params.id}`
-            ),
+            fetch(`http://localhost:5000/courses/${params.id}`),
           element: (
             <PrivateRoute>
               <Checkout></Checkout>
@@ -83,8 +74,7 @@ function App() {
         },
         {
           path: '/filter/:category',
-          loader: () =>
-            fetch('https://brain-exercise-server.vercel.app/courses'),
+          loader: () => fetch('http://localhost:5000/courses'),
           element: <Filter></Filter>,
         },
         {
