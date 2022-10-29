@@ -4,18 +4,19 @@ import './Banner.css';
 
 const Banner = () => {
   return (
-    <div className="hero-banner py-20">
-      <div className="lg:w-3/4 mx-auto">
-        <div className="lg:w-1/2">
-          <h1 className="lg:text-5xl text-xl font-bold text-white">
-            Learning Today, <br />
-            Leading Tomorrow
-          </h1>
+    <div className="hero-banner py-20 px-40">
+      <div className=" mx-auto">
+        <div className="">
+          <h1 className="lg:text-5xl text-xl font-bold text-white">LearnHub</h1>
 
           <h4 className="lg:text-xl mt-5">
-            BrainExercise is a platform where you can learn and practice
-            programming skills. We have a large collection of courses and
-            practice problems.
+            “The more that you read, the more things you will know. The more
+            that you learn, the more places you’ll go.” ― Dr. Seuss
+          </h4>
+          <h4 className="lg:text-xl mt-5">
+            “Bodily exercise, when compulsory, does no harm to the body; but
+            knowledge which is acquired under compulsion obtains no hold on the
+            mind.” ― Plato
           </h4>
 
           <div className="mt-10">
@@ -23,7 +24,7 @@ const Banner = () => {
               to="/courses"
               className="btn btn-outline btn-primary mr-5 rounded-full px-10"
             >
-              Get Started Now!
+              Get Started
             </Link>
           </div>
         </div>

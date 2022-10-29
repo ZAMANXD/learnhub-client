@@ -2,13 +2,6 @@
     position: relative;
 }
 
-img.w-full.course-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
 .py-10.lg\:w-3\/4.w-full.mx-auto.course-contents {
     position: relative;
     z-index: 1;
@@ -22,18 +15,12 @@ img.w-full.course-banner {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), #0F1729);
+    background: rgb(121, 121, 29);
     z-index: 1;
 }
 
 @media screen and (max-width: 992px) {
-    img.w-full.course-banner {
-        position: unset;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
+    
     .py-10.lg\:w-3\/4.w-full.mx-auto.course-contents {
         position: relative;
         z-index: 1;
@@ -47,7 +34,11 @@ img.w-full.course-banner {
         left: 0;
         width: 100%;
         height: 100%;
-        background: unset;
+        background: rgb(121, 121, 29);
         z-index: 1;
+    }
+    table .table-body{
+        padding-top: 10px;
+        margin-bottom: 10px;
     }
 }

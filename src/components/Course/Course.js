@@ -12,11 +12,11 @@ const Course = ({ course }) => {
         </figure>
         <div className="card-body p-4">
           <div className="flex justify-between items-center">
-            <div className="bg-green-500 px-2 py-1 text-white">
-              {course.category}
+            <div className="bg-pink-500 px-2 py-1 text-white">
+              <small>{course.category}</small>
             </div>
             <h2 className="text-2xl">
-              <span className="text-sm"> $</span>
+              <span> $</span>
               <span className="font-bold text-white">
                 {course.price === 0 ? 'Free' : course.price}
               </span>
@@ -28,14 +28,15 @@ const Course = ({ course }) => {
               ? course.description.slice(0, 50) + '...'
               : course.description}
           </p>
-          <p className="text-white">Instructor:</p>
           <div className="flex items-center">
             <img
               src={course.instructor_image}
               className="rounded-full instructor-img"
               alt={course.instructor}
             />
-            <p className="text-white">{course.instructor}</p>
+            <p className="text-white">
+              <small>{course.instructor}</small>
+            </p>
           </div>
           <div className="divider"></div>
 
