@@ -3,14 +3,14 @@ import React from 'react';
 const Blogs = () => {
   return (
     <div>
-      <div className="lg:w-3/4 w-full mx-auto py-10 lg:px-0 px-4">
+      <div className="lg:w-1/2 w-full mx-auto py-10 lg:px-0 px-4">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-white">Blogs</h2>
         </div>
 
-        <div className="mt-5">
-          <h2 className="text-2xl">1. what is cors?</h2>
-          <p>
+        <div className="mt-12">
+          <h2 className="text-2xl text-justify">1. what is cors?</h2>
+          <p className="text-justify mt-5">
             Cross-Origin Resource Sharing (CORS) is an HTTP-header based
             mechanism that allows a server to indicate any origins (domain,
             scheme, or port) other than its own from which a browser should
@@ -30,19 +30,21 @@ const Blogs = () => {
             right CORS headers.
           </p>
         </div>
-        <div className="mt-5">
-          <h2 className="text-2xl">
+        <div className="mt-12">
+          <h2 className="text-2xl text-justify">
             2. Why are you using firebase? What other options do you have to
             implement authentication?
           </h2>
-          <p>
+          <p className="text-justify mt-5">
             I am using firebase because it is easy to use and it is free. I can
             use other options like Auth0, AWS Cognito, Okta, etc.
           </p>
         </div>
-        <div className="mt-5">
-          <h2 className="text-2xl">3. How does the private route work?</h2>
-          <p>
+        <div className="mt-12">
+          <h2 className="text-2xl text-justify">
+            3. How does the private route work?
+          </h2>
+          <p className="text-justify mt-5">
             Private Routes in React Router (also called Protected Routes)
             require a user being authorized to visit a route. So if a user is
             not authorized for a specific page, they cannot access it. The most
@@ -54,9 +56,11 @@ const Blogs = () => {
             application.
           </p>
         </div>
-        <div className="mt-5">
-          <h2 className="text-2xl">4. What is Node? How does Node work?</h2>
-          <p>
+        <div className="mt-12">
+          <h2 className="text-2xl text-justify">
+            4. What is Node? How does Node work?
+          </h2>
+          <p className="text-justify mt-5">
             Node.js is an open-source backend javascript runtime environment. It
             is a used as backend service where javascript works on the
             server-side of the application. This way javascript is used on both

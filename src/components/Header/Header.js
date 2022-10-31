@@ -48,15 +48,16 @@ const Header = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink eventkey="3" to="/faqs" end>
-                FAQS
-              </NavLink>
-            </li>
-            <li>
-              <NavLink eventkey="4" to="/blogs" end>
+              <NavLink eventkey="3" to="/blogs" end>
                 BLOGS
               </NavLink>
             </li>
+            <li>
+              <NavLink eventkey="4" to="/faqs" end>
+                FAQS
+              </NavLink>
+            </li>
+
             <li>
               <NavLink eventkey="5" to="/login" end>
                 SIGN IN
@@ -90,13 +91,13 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink eventkey="3" to="/faqs" end>
-              FAQS
+            <NavLink eventkey="3" to="/blogs" end>
+              BLOGS
             </NavLink>
           </li>
           <li>
-            <NavLink eventkey="4" to="/blogs" end>
-              BLOGS
+            <NavLink eventkey="4" to="/faqs" end>
+              FAQ
             </NavLink>
           </li>
         </ul>

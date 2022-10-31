@@ -3,7 +3,7 @@ import React from 'react';
 const Faqs = () => {
   return (
     <div>
-      <div className="w-3/4 py-10 mx-auto">
+      <div className="w-3/4 custom-height py-10 mx-auto">
         <div className="text-center">
           <h2 className="text-4xl font-bold text-white">
             Frequently Asked Questions
