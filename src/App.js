@@ -24,7 +24,7 @@ function App() {
         {
           path: '/',
           element: <Home></Home>,
-          loader: () => fetch('http://localhost:5000/courses'),
+          loader: () => fetch('https://learnhub-server.vercel.app/courses'),
         },
         {
           path: '/blogs',
@@ -33,7 +33,7 @@ function App() {
         {
           path: '/courses',
           element: <Courses></Courses>,
-          loader: () => fetch('http://localhost:5000/courses'),
+          loader: () => fetch('https://learnhub-server.vercel.app/courses'),
         },
         {
           path: '/faqs',
@@ -59,13 +59,13 @@ function App() {
         {
           path: '/course-details/:id',
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/courses/${params.id}`),
+            fetch(`https://learnhub-server.vercel.app/courses/${params.id}`),
           element: <CourseDetails></CourseDetails>,
         },
         {
           path: '/checkout/:id',
           loader: ({ params }) =>
-            fetch(`http://localhost:5000/courses/${params.id}`),
+            fetch(`https://learnhub-server.vercel.app/courses/${params.id}`),
           element: (
             <PrivateRoute>
               <Checkout></Checkout>
@@ -74,7 +74,7 @@ function App() {
         },
         {
           path: '/filter/:category',
-          loader: () => fetch('http://localhost:5000/courses'),
+          loader: () => fetch('https://learnhub-server.vercel.app/courses'),
           element: <Filter></Filter>,
         },
         {
